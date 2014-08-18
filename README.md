@@ -12,8 +12,10 @@ Here are some things to keep in mind when using has_secure_password:
 
 - When signing in a user, you will no longer look them up by their username/password combination. Instead you will find and authenticate users in separate steps.
 
+```
     # find user by username
     user = User.find_by(username: params[:user][:username])
 
     # make sure the user entered the correct password
     user.authenticate(params[:user][:password])
+```
