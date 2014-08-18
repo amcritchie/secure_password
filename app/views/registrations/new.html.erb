@@ -1,4 +1,4 @@
-<%= form_for @user, url: sessions_path do |f| %>
+<%= form_for @user, url: registrations_path do |f| %>
     <% if @user.errors.any? %>
         <ul>
           <% @user.errors.full_messages.each do |message| %>
@@ -13,13 +13,15 @@
         <%= f.text_field :username %>
       </li>
       <li>
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+      </li>
+      <li>
         <%= f.label :password %>
         <%= f.password_field :password %>
       </li>
       <li>
-        <%= f.submit "Sign In" %>
+        <%= f.submit "Register" %>
       </li>
     </ul>
 <% end %>
-
-<%= link_to "Register", new_registration_path %>
