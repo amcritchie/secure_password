@@ -19,3 +19,5 @@ Here are some things to keep in mind when using has_secure_password:
     # make sure the user entered the correct password
     user.authenticate(params[:user][:password])
 ```
+
+Check out the `app/controllers/sessions_controller.rb` for an example of what this would look like in a Rails application.
