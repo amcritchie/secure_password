@@ -6,7 +6,7 @@ Here are some things to keep in mind when using has_secure_password:
 
 - You need the include the bcrypt gem in your Gemfile
 
-    gem 'bcrypt', '~> 3.1.7'
+        gem 'bcrypt', '~> 3.1.7'
 
 - Your users tables needs a password_digest column to your users table instead of a password column.
 
